@@ -1,0 +1,23 @@
+<html>
+<head>
+<title> Random Number Genreator </title>
+</head>
+<body>
+
+<div id="holder" style="width: 1000px;height:400px;text-align: center;align-content: center;"></div>
+<div id="holder" style="width: 1000px;text-align: center;align-content: center;"><button value="Click me" onclick="getNewRandomNumber()">Click Me</button></div>
+ <script>
+function getRandomNumber() {
+    var MAX = 100000000000
+    return Math.floor(Math.random() * MAX) + 1;
+}
+
+function getNewRandomNumber() {
+var holder = document.getElementById("holder");
+holder.innerHTML = getRandomNumber();
+}
+
+getNewRandomNumber();
+</script>
+</body>
+</html>
